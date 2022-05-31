@@ -1,0 +1,27 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="images/favicon.png">
+</head>
+
+<body>
+    <div id="full-contents">
+        <%- include('partials/header.ejs') %>
+        <div id="page-contents">
+            <div id="todo-items" class="grid-container">
+                <% JSON.parse(items).forEach(function(item) { %>
+                    <%- include('./partials/post', {title: item.title, date_created_day: item.date_created_day, date_created_month: item.date_created_month, date_created_year: item.date_created_year,
+                        date_due_day: item.date_due_day, date_due_month: item.date_due_month, date_due_year: item.date_due_year, description: item.description}) %>
+                        <% }) %>
+            </div>
+        </div>
+        <%- include('partials/footer.ejs') %>
+    </div>
+</body>
+
+</html>
