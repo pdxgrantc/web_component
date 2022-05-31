@@ -35,14 +35,14 @@ app.get('/new-item', (req, res) => {
   res.status(200).render('new-item');
 });
 
-app.post("/new-item", (req, res) => {
+app.post("/new-item", (request, response) => {
   //Destructure the request body
   var resData = {
-    serverData: req.body,
+    serverData: request.body,
   };
 
   database.new_item(request.body.title, request.body.due_day, request.body.due_month, request.body.due_year, request.body.description);
-  res.status(200).render('new-item');
+  response.status(200).render('new-item');
 });
 
 app.get('*', (req, res) => { /* 404 error */
