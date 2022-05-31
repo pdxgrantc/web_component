@@ -23,39 +23,28 @@ app.use(express.json());
 app.get('/', (req, res) => {
   const recieved_items = database.get_items();
 
-  res.render('index', {
+  //console.log(JSON.stringify(recieved_items));
+
+  res.status(200).render('index', {
     items: JSON.stringify(recieved_items)
   });
 });
 
 app.get('/new-item', (req, res) => {
   
-  res.render('new-item');
+  res.status(200).render('new-item');
 });
 
-app.post("/new-item", (request, response) => {
+app.post("/new-item", (req, res) => {
   //Destructure the request body
   var resData = {
-    serverData: request.body,
+    serverData: req.body,
   };
 
   database.new_item(request.body.title, request.body.due_day, request.body.due_month, request.body.due_year, request.body.description);
-
-  //Console log the response data (for debugging)
-  //console.log(resData.serverData);
-  //Send the response as JSON with status code 200 (success)
-  response.status(200).render('new-item');
+  res.status(200).render('new-item');
 });
 
-/*
-app.post("/new-item", (req, res) => {
-  let data = req.body;
-  var title = Number(req.body.title);
-  var date = Number(req.body.date);
-  var description = Number(req.body.description);
-  res.redirect("/");
-});
-*/
 app.get('*', (req, res) => { /* 404 error */
   res.render('404.ejs');
 });

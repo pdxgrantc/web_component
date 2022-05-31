@@ -56,8 +56,8 @@ class Database {
     }
 
     readIn() {
-        let json = require(__dirname + '/data/db.json');
-        this.users = json;
+        let db_json = require(__dirname + '/data/db.json');
+        this.items = db_json;
     }
 
     delete_item(title) {
@@ -74,8 +74,7 @@ class Database {
     }
     
     get_items() {
-        const ary_items = this.items;
-        return ary_items;
+        return this.items;
     }
 }
 
