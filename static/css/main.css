@@ -67,42 +67,6 @@ body {
     margin: 50px auto;
 }
 
-#title {
-    background-color: var(--button-presed);
-    border-radius: var(--border-rad);
-    padding: 15px 55px;
-    width: fit-content;
-}
-
-#title h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-#page-contents {
-    width: 100%;
-}
-
-#page-contents div {
-    height: fit-content;
-}
-
-.metadata {
-    display: flex;
-    margin: auto;
-    flex-direction: row;
-    justify-content: start;
-    gap: 2%;
-    flex-wrap: wrap;
-    margin-bottom: -15px;
-}
-
-.metadata div * {
-    margin-bottom: 0px;
-    font-size: 1.3em;
-    line-height: 1.5em;
-}
-
 #todo-items {
     width: 100%;
 }
@@ -112,10 +76,6 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2vw;
     row-gap: 0vw;
-}
-
-.description {
-    font-size: 1.05em;
 }
 
 #footer {

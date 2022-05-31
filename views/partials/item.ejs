@@ -1,22 +1,32 @@
-<div id="item">
+<div class="item">
     <div class="item-header">
         <h1 class="item-title">
             <%- title %>
         </h1>
+    </div>
+    <div class="dates">
         <div class="item-date">
-            <%- date_created_day %>
+            <h3>Due:</h3>
+            <%=date_due_month%>
+            <p>-</p>
+            <%=date_due_day%>
+            <p>-</p>
+            <%=date_due_year%>
+        </div>
+        <div class="item-date">
+            <h3>Created:</h3>
             <%= date_created_month %>
+            <p>-</p>
+            <%- date_created_day %>
+            <p>-</p>
             <%= date_created_year %>
         </div>
     </div>
-    <div class="item-body">
-        <div class="item-description">
-            <%= description %>
-        </div>
-        <div class="item-date">
-            <%= date_due_day %>
-            <%= date_due_month %>
-            <%= date_due_year %>
-        </div>
+    <div class="item-description">
+        <h3>Description:</h3>
+        <%= description %>
+    </div>
+    <div class="delete-item">
+        <button class="delete-item-button">Delete</button>
     </div>
 </div>
