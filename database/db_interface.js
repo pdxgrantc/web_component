@@ -74,8 +74,7 @@ class Database {
     }
     
     get_items() {
-        console.log("Tried to get posts");
-        ary_items = this.items;
+        const ary_items = this.items;
         return ary_items;
     }
 }

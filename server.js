@@ -21,15 +21,16 @@ app.use(express.static(path.join(__dirname, './static')));
 app.use(express.json());
 
 app.get('/', (req, res) => {
-  res.render('index');
+  const recieved_items = database.get_items();
+
+  res.render('index', {
+    items: JSON.stringify(recieved_items)
+  });
 });
 
 app.get('/new-item', (req, res) => {
-  recieved_items = database.get_items();
   
-  res.render('new-item', {
-    items: JSON.stringify(recieved_items)
-  });
+  res.render('new-item');
 });
 
 app.post("/new-item", (request, response) => {
