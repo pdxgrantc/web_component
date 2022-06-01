@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <div id="page-contents">
+    <div id="page-contents" class="vertical-flex">
         <div id="header" class="flex">
             <%- include('partials/header.ejs') %>
         </div>
@@ -19,7 +19,9 @@
                     item.date_due_year, description: item.description}) %>
                     <% }) %>
         </div>
-        <%- include('partials/footer.ejs') %>
+        <div id="footer">
+            <%- include('partials/footer.ejs') %>
+        </div>
     </div>
 </body>
 
