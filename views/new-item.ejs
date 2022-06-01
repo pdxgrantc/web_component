@@ -2,39 +2,37 @@
 
 <head>
     <%- include('partials/head.ejs') %>
-    <title>New Item</title>
-    <link rel="stylesheet" href="css/new-item.css">
-    <script src="scripts/new-item.js"></script>
+        <title>New Item</title>
+        <link rel="stylesheet" href="css/new-item.css">
+        <script src="scripts/new-item.js"></script>
 </head>
 
 <body>
     <div id="full-contents">
-        <%- include('partials/header.ejs') %>
-            <div id="page-contents">
-                <div id="page-contents">
-                    <div name="new-item-form" id="inputs" class="form-div">
-                        <form method="POST" id="new-item" class="vertical-flex">
-                            <section>
-                                <input id="title-input" class="input-box" type="text" name="title" placeholder="Title"
-                                    required>
-                            </section>
-                            <section id="dates">
-                                <input class="input-box" type="text" name="due_day" placeholder="Day" required>
-                                <input class="input-box" type="text" name="due_month" placeholder="Month" required>
-                                <input class="input-box" type="text" name="due_year" placeholder="Year" required>
-                            </section>
-                            <section>
-                                <textarea id="descripton-input" class="input-box" name="description" cols="30" rows="10"
-                                    placeholder="Description" required></textarea>
-                            </section>
-                            <section id="button">
-                                <button id="btn" class="submit-button" type="submit">Submit</button>
-                            </section>
-                        </form>
-                    </div>
+        <div id="page-contents">
+            <%- include('partials/header.ejs') %>
+                <div name="new-item-form" id="inputs" class="form-div">
+                    <form method="POST" id="new-item" class="vertical-flex">
+                        <section>
+                            <input id="title-input" class="input-box" type="text" name="title" placeholder="Title"
+                                required>
+                        </section>
+                        <section id="dates">
+                            <input class="input-box" type="text" name="due_day" placeholder="Day" required>
+                            <input class="input-box" type="text" name="due_month" placeholder="Month" required>
+                            <input class="input-box" type="text" name="due_year" placeholder="Year" required>
+                        </section>
+                        <section>
+                            <textarea id="descripton-input" class="input-box" name="description" cols="30" rows="10"
+                                placeholder="Description" required></textarea>
+                        </section>
+                        <section id="button">
+                            <button id="btn" class="submit-button" type="submit">Submit</button>
+                        </section>
+                    </form>
                 </div>
-            </div>
-            <%- include('partials/footer.ejs') %>
+                <%- include('partials/footer.ejs') %>
+        </div>
     </div>
 </body>
 

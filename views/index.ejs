@@ -2,22 +2,24 @@
 
 <head>
     <%- include('partials/head.ejs') %>
-    <title>TO-DO</title>
-    <link rel="stylesheet" href="css/index.css">
+        <title>TO-DO</title>
+        <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
     <div id="full-contents">
-        <%- include('partials/header.ejs') %>
         <div id="page-contents">
-            <div id="todo-items" class="grid-container">
-                <% JSON.parse(items).forEach(function(item) { %>
-                    <%- include('./partials/item', {title: item.title, date_created_day: item.date_created_day, date_created_month: item.date_created_month, date_created_year: item.date_created_year,
-                        date_due_day: item.date_due_day, date_due_month: item.date_due_month, date_due_year: item.date_due_year, description: item.description}) %>
-                        <% }) %>
-            </div>
+            <%- include('partials/header.ejs') %>
+                <div id="todo-items" class="grid-container">
+                    <% JSON.parse(items).forEach(function(item) { %>
+                        <%- include('./partials/item', {title: item.title, date_created_day: item.date_created_day,
+                            date_created_month: item.date_created_month, date_created_year: item.date_created_year,
+                            date_due_day: item.date_due_day, date_due_month: item.date_due_month, date_due_year:
+                            item.date_due_year, description: item.description}) %>
+                            <% }) %>
+                </div>
+                <%- include('partials/footer.ejs') %>
         </div>
-        <%- include('partials/footer.ejs') %>
     </div>
 </body>
 
