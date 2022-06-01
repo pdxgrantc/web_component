@@ -1,0 +1,19 @@
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: var(--gap-width);
+    vertical-align: bottom;
+    align-items: center;
+}
+
+.vertical-flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: var(--gap-width);
+    vertical-align: bottom;
+    align-items: center;
+}

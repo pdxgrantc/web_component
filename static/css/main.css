@@ -18,29 +18,14 @@ body {
     min-width: 400px;
 }
 
+#page-contents {
+    margin: 50px auto;
+    width: 70%;
+}
+
 #header {
-    width: 81%;
+    width: 100%;
     margin: auto;
-}
-
-.flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: var(--gap-width);
-    vertical-align: bottom;
-    align-items: center;
-}
-
-.vertical-flex {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: var(--gap-width);
-    vertical-align: bottom;
-    align-items: center;
 }
 
 #nav-bar {
@@ -64,16 +49,6 @@ body {
 
 .nav-button {
     white-space: nowrap;
-}
-
-#full-contents {
-    width: 90%;
-    margin: 50px auto;
-}
-
-#page-contents {
-    margin: 50px auto;
-    width: 81%;
 }
 
 #todo-items {

@@ -10,10 +10,6 @@ p {
     margin: 0px auto;
 }
 
-#nav-bar {
-    margin-right: 100px;
-}
-
 .item {
     display: flex;
     flex-direction: column;
