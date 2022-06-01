@@ -1,0 +1,89 @@
+:root {
+    --main-bg-color: rgb(18, 24, 36);
+    --button-presed: rgb(50, 60, 88);
+    --white-color: rgb(214, 214, 214);
+    --accent-button: rgb(106, 105, 245);
+    --accent-button-presed: rgb(52, 51, 112);
+    --accent-color: rgb(71, 82, 102);
+    --gap-width: 20px;
+    --border-rad: 10px;
+}
+
+#page-contents {
+    width: 90%;
+}
+
+form {
+    margin: 0px auto;
+}
+
+section {
+    width: 100%;
+    margin: auto;
+    margin: 2px;
+}
+
+section * {
+    border-radius: var(--border-rad);
+}
+
+input {
+    padding: 0px 10px;
+    border: none;
+    width: 100%;
+    height: 5vh;
+    font-size: 24px;
+}
+
+input:focus {
+    outline: none;
+}
+
+#title-input {
+    font-size: 26px;
+}
+
+textarea {
+    padding: 5px 10px;
+    border: none;
+    font-size: 18px;
+    width: 100%;
+    height: 35vh;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+#dates {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#dates input {
+    width: 32%;
+}
+
+#button {
+    width: 20%;
+    height: 6vh;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-color: var(--button-presed);
+    border-radius: var(--border-rad);
+    font-size: 32px;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--accent-color);
+}
