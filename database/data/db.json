@@ -1,62 +1,32 @@
 [
     {
-        "title": "t",
-        "date_created_day": "31",
-        "date_created_month": "4",
+        "title": "Lab Seven Check Off",
+        "date_created_day": "3",
+        "date_created_month": "5",
         "date_created_year": "2022",
-        "date_due_day": "t",
-        "date_due_month": "t",
-        "date_due_year": "t",
-        "description": "t"
+        "date_due_day": "3",
+        "date_due_month": "6",
+        "date_due_year": "2022",
+        "description": "Lab Seven needs to be complted it is supposed to display a sprite with the vga output on the MAX 10 FPGA. Requires an image and a .py script to create memory."
     },
     {
-        "title": "t",
-        "date_created_day": "31",
-        "date_created_month": "4",
+        "title": "ECE Final",
+        "date_created_day": "3",
+        "date_created_month": "5",
         "date_created_year": "2022",
-        "date_due_day": "t",
-        "date_due_month": "t",
-        "date_due_year": "t",
-        "description": "t"
+        "date_due_day": "3",
+        "date_due_month": "6",
+        "date_due_year": "2022",
+        "description": "Finish your bullshit, just do it."
     },
     {
-        "title": "t",
-        "date_created_day": "31",
-        "date_created_month": "4",
+        "title": "Check on Lab report due times",
+        "date_created_day": "3",
+        "date_created_month": "5",
         "date_created_year": "2022",
-        "date_due_day": "t",
-        "date_due_month": "t",
-        "date_due_year": "t",
-        "description": "t\r\n"
-    },
-    {
-        "title": "t",
-        "date_created_day": "31",
-        "date_created_month": "4",
-        "date_created_year": "2022",
-        "date_due_day": "t",
-        "date_due_month": "t",
-        "date_due_year": "t",
-        "description": "t"
-    },
-    {
-        "title": "t",
-        "date_created_day": "31",
-        "date_created_month": "4",
-        "date_created_year": "2022",
-        "date_due_day": "t",
-        "date_due_month": "t",
-        "date_due_year": "t",
-        "description": "t"
-    },
-    {
-        "title": "t",
-        "date_created_day": "31",
-        "date_created_month": "4",
-        "date_created_year": "2022",
-        "date_due_day": "t",
-        "date_due_month": "t",
-        "date_due_year": "t",
-        "description": "test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test test "
+        "date_due_day": "3",
+        "date_due_month": "6",
+        "date_due_year": "2022",
+        "description": "Check with ECE 272 TA's for lab report due times. If you have to do them today do it."
     }
 ]
