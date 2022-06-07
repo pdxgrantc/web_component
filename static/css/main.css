@@ -43,7 +43,7 @@ body {
     color: var(--white-color);
     background-color: var(--button-presed);
     border-radius: var(--border-rad);
-    padding: 0 30px;
+    padding: 0px 30px;
 }
 
 .a-nav-button:hover {
@@ -54,6 +54,10 @@ body {
     white-space: nowrap;
 }
 
+#title {
+    line-height: 22px;
+}
+
 #todo-items {
     width: 100%;
 }
@@ -62,7 +66,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2vw;
-    row-gap: 0vw;
 }
 
 #footer {
@@ -70,7 +73,13 @@ body {
     text-align: center;
 }
 
-@media (max-width:800px) {
+@media (max-width: 1350px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 950px) {
     #header {
         width: 100%;
         margin: auto;
