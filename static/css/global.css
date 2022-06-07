@@ -16,3 +16,17 @@
     vertical-align: bottom;
     align-items: center;
 }
+
+#small-screen-nav {
+    display: show;
+}
+
+@media (max-width: 950px) {
+    #nav-bar {
+        display: hidden;
+    }
+
+    #small-screen-nav {
+        display: show;
+    }
+}

@@ -15,3 +15,38 @@
         </div>
     </a>
 </div>
+<div id="small-screen-nav">
+    <button onclick="drop_down()" class="dropdown-button">Dropdown</button>
+    <div id="dropdown" class="dropdown-content">
+        <a href="/" etc class="a-nav-button">
+            <div id="home" class="nav-button">
+                <h2>Home</h2>
+            </div>
+        </a>
+        <a href="/new-item" etc class="a-nav-button">
+            <div id="new-item" class="nav-button">
+                <h2>Add Item</h2>
+            </div>
+        </a>
+    </div>
+</div>
+
+<script>
+    /* when user clicks button drop down menu appears */
+    function drop_down() {
+        document.getElementByID("dropdown").classList.toggle("show");
+    }
+
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropdown-button')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
