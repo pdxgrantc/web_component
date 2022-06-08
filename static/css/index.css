@@ -50,12 +50,6 @@ p {
     gap: 10px;
 }
 
-@media (max-width:950px) {
-    #nav-bar {
-        margin-right: 0px;
-    }
-}
-
 /*
 
 #title {

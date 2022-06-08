@@ -17,7 +17,7 @@
         "date_due_day": "3",
         "date_due_month": "6",
         "date_due_year": "2022",
-        "description": "Finish your bullshit, just do it."
+        "description": "Finish your bullshit just do it."
     },
     {
         "title": "Check on Lab report due times",
@@ -28,5 +28,25 @@
         "date_due_month": "6",
         "date_due_year": "2022",
         "description": "Check with ECE 272 TA's for lab report due times. If you have to do them today do it."
+    },
+    {
+        "title": "CS 362 Final",
+        "date_created_day": "8",
+        "date_created_month": "5",
+        "date_created_year": "2022",
+        "date_due_day": "8",
+        "date_due_month": "6",
+        "date_due_year": "2022",
+        "description": "Finish the CS 362 Final."
+    },
+    {
+        "title": "Finish 362 Final",
+        "date_created_day": "8",
+        "date_created_month": "5",
+        "date_created_year": "2022",
+        "date_due_day": "7",
+        "date_due_month": "6",
+        "date_due_year": "2022",
+        "description": "CS 362 Final 7 questions isn't that hard."
     }
 ]
