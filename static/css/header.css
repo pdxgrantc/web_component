@@ -1,0 +1,82 @@
+/* Main nav bar css */
+#nav-bar {
+    width: fit-content;
+    line-height: 85%;
+    font-size: 18px;
+    height: fit-content;
+}
+
+.a-nav-button {
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--button-presed);
+    border-radius: var(--border-rad);
+    padding: 0px 30px;
+}
+
+.a-nav-button:hover {
+    background-color: var(--accent-color);
+}
+
+.nav-button {
+    white-space: nowrap;
+}
+
+#title {
+    line-height: 22px;
+}
+
+#todo-items {
+    width: 100%;
+}
+
+/* Dropdown menu settings */
+#small-screen-nav {
+    display: none;
+}
+
+.dropdown-button {
+    cursor: pointer;
+    border: none;
+    color: var(--white-color);
+}
+
+.dropdown-button:hover, .dropdown-button:focus {
+    background-color: var(--accent-color);
+}
+
+.myDropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.myDropdown a:hover {
+    background-color: var(--accent-color);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var();
+    overflow: auto;
+    z-index: 1;
+}
+
+.show {
+    display: block;
+}
+
+@media (max-width: 950px) {
+    #nav-bar {
+        display: none;
+        margin-right: 0px;
+    }
+
+    #small-screen-nav {
+        display: inline;
+    }
+
+    #title {
+        display: none;
+    }
+}

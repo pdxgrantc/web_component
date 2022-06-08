@@ -1,3 +1,5 @@
+/* css items relating to the todo list on home page */
+
 h3 {
     margin: 0px;
 }
@@ -49,43 +51,3 @@ p {
     flex-wrap: nowrap;
     gap: 10px;
 }
-
-/*
-
-#title {
-    background-color: var(--button-presed);
-    border-radius: var(--border-rad);
-    padding: 15px 55px;
-    width: fit-content;
-}
-
-#title h1 {
-    font-size: 3em;
-    margin: 0;
-}
-
-#page-contents {
-    width: 100%;
-}
-
-#page-contents div {
-    height: fit-content;
-}
-
-.metadata {
-    display: flex;
-    margin: auto;
-    flex-direction: row;
-    justify-content: start;
-    gap: 2%;
-    flex-wrap: wrap;
-    margin-bottom: -15px;
-}
-
-.metadata div * {
-    margin-bottom: 0px;
-    font-size: 1.3em;
-    line-height: 1.5em;
-}
-
-*/
