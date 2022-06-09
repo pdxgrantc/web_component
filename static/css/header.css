@@ -39,15 +39,24 @@
     cursor: pointer;
     border: none;
     color: var(--white-color);
+    padding: 10px 40px;
+    font-weight: 500;
 }
 
-.dropdown-button:hover, .dropdown-button:focus {
+.dropdown-button:hover,
+.dropdown-button:focus {
     background-color: var(--accent-color);
 }
 
 .myDropdown {
     position: relative;
     display: inline-block;
+}
+
+#myDropdown a {
+    padding: 7px 30px;
+    font-size: 27px;
+    font-weight: 500;
 }
 
 .myDropdown a:hover {
@@ -63,7 +72,24 @@
 }
 
 .show {
-    display: block;
+    display: flex;
+    flex-direction: column;
+}
+
+.small-screen-nav-button {
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--button-presed);
+    border-radius: var(--border-rad);
+    padding: 0px 10px;
+}
+
+.small-screen-nav-button:hover {
+    background-color: var(--accent-color);
+}
+
+.small-screen-nav-button {
+    font-size: 25px;
 }
 
 @media (max-width: 950px) {
