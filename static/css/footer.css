@@ -1,0 +1,30 @@
+#small-screen-footer {
+    display: none;
+}
+
+#small-screen-footer * {
+    margin: 5px auto;
+    text-align: center;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#footer-year {
+    margin-top: 8px;
+}
+
+#big-screen-footer {
+    display: block;
+}
+
+
+@media (max-width: 950px) {
+    #small-screen-footer {
+        display: block;
+    }
+
+    #big-screen-footer {
+        display: none;
+    }
+}
