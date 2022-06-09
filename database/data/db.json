@@ -48,5 +48,15 @@
         "date_due_month": "6",
         "date_due_year": "2022",
         "description": "CS 362 Final 7 questions isn't that hard."
+    },
+    {
+        "title": "New-Item Header",
+        "date_created_day": "9",
+        "date_created_month": "5",
+        "date_created_year": "2022",
+        "date_due_day": "9",
+        "date_due_month": "6",
+        "date_due_year": "2022",
+        "description": "The header spacing on the new item page when using a large monitor doesn't line up with the edges of the input boxes. Need to readjust the width of the main page div."
     }
 ]
