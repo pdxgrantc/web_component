@@ -65,7 +65,12 @@ textarea:focus {
 
 #button {
     width: 20%;
+    min-width: fit-content;
     height: 6vh;
     border: none;
     cursor: pointer;
+}
+
+.submit-button {
+    min-width: fit-content;
 }
