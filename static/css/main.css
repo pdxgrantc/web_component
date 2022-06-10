@@ -15,7 +15,7 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    width: 100%;
+    width: 65%;
     margin: auto;
     background-color: var(--main-bg-color);
     color: var(--white-color);
@@ -24,7 +24,7 @@ body {
 
 #page-contents {
     margin: 50px auto;
-    width: 70%;
+    
     gap: var(--vertical-gap-width);
 }
 

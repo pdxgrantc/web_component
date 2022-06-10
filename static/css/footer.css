@@ -18,6 +18,29 @@
     display: block;
 }
 
+#footerLinks {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+    margin-bottom: 1em;
+}
+
+.logoLink:hover {
+    -webkit-filter: invert(95%);
+    filter: invert(95%);
+}
+
+.logoLink {
+    width: 3vw;
+    height: auto;
+}
+
+.logoLink img {
+    width: 100%;
+    height: 100%;
+}
 
 @media (max-width: 950px) {
     #small-screen-footer {
