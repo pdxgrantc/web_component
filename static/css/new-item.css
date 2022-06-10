@@ -6,7 +6,6 @@
     --accent-button-presed: rgb(52, 51, 112);
     --accent-color: rgb(71, 82, 102);
     --gap-width: 20px;
-    --border-rad: 10px;
 }
 
 form {
@@ -21,7 +20,7 @@ section {
 }
 
 section * {
-    border-radius: var(--border-rad);
+   
 }
 
 input {
