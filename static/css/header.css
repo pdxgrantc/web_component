@@ -10,7 +10,6 @@
     text-decoration: none;
     color: var(--white-color);
     background-color: var(--button-presed);
-    border-radius: var(--border-rad);
     padding: 0px 30px;
 }
 
@@ -80,7 +79,6 @@
     text-decoration: none;
     color: var(--white-color);
     background-color: var(--button-presed);
-    border-radius: var(--border-rad);
     padding: 0px 10px;
 }
 
