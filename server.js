@@ -1,13 +1,28 @@
+var arguments = process.argv;
+
+var port = 80;
+
+if (arguments.length == 2) {
+				//console.log(arguments.length);
+				port = 80;
+}
+else {
+				port = 3000;
+}
+
+console.log(port);
+
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+
 var cors = require("cors");
 
 const db = require(__dirname + "/database/db_interface.js")
 const database = new db.Database();
 
 const app = express();
-const port = process.env.PORT || 80;
+//const port = process.env.PORT || 80;
 
 app.use(cors());
 
