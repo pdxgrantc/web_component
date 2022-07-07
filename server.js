@@ -35,7 +35,9 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, './static')));
 app.use(express.json());
 
-app.get('/', (req, res) => {
+app.get()
+
+app.get('/todo', (req, res) => {
   const recieved_items = database.get_items();
 
   //console.log(JSON.stringify(recieved_items));
@@ -45,12 +47,12 @@ app.get('/', (req, res) => {
   });
 });
 
-app.get('/new-item', (req, res) => {
+app.get('/todo/new-item', (req, res) => {
   
   res.status(200).render('new-item');
 });
 
-app.post("/new-item", (request, response) => {
+app.post("/todo/new-item", (request, response) => {
   //Destructure the request body
   var resData = {
     serverData: request.body,

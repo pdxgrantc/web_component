@@ -1,0 +1,130 @@
+:root {
+    --main-bg-color: rgb(18, 24, 36);
+    --button-presed: rgb(38, 45, 64);
+    --white-color: rgb(214, 214, 214);
+    --accent-button: rgb(106, 105, 245);
+    --accent-button-presed: rgb(52, 51, 112);
+    --accent-text: rgb(71, 82, 102);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--white-color);
+    background-color: var(--main-bg-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+#fullContents {
+    margin: auto;
+    width: 77%;
+    margin-top: 30px;
+}
+
+.contentCol {
+    width: 47.5%;
+}
+
+#topContentGap {
+    height: 20px;
+}
+
+/*header*/
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+/*left side*/
+#left {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--button-presed);
+    border-radius: 15px;
+    padding: 0px 35px;
+    gap: 2.5vw;
+    font-size: 20px;
+}
+
+#GIcon {
+    width: 2.5vw;
+    height: auto;
+    margin: auto;
+}
+
+/* right side*/
+#right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+    gap: 30px;
+}
+
+#rightMid {
+    display: flex;
+    justify-content: space-between;
+}
+
+#aboutMe {
+    background-color: var(--accent-button);
+}
+
+#aboutMe:hover {
+    background-color: var(--button-presed);
+}
+
+.navItem {
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.navItem:hover {
+    background-color: var(--button-presed);
+}
+
+#contentGap {
+    height: 60px;
+}
+
+/*Footer*/
+#footerGap {
+    height: 60px;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 1vh;
+    margin-bottom: 50px;
+}
+
+#footerLinks {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
+}
+
+.logoLink {
+    width: 3vw;
+    height: auto;
+}
+
+.logoLink:hover {
+    -webkit-filter: invert(95%);
+    filter: invert(95%);
+}
+
+#footerText {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}

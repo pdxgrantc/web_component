@@ -1,0 +1,88 @@
+:root {
+    --main-bg-color: rgb(18, 24, 36);
+    --button-presed: rgb(38, 45, 64);
+    --white-color: rgb(214, 214, 214);
+    --accent-button: rgb(106, 105, 245);
+    --accent-button-presed: rgb(52, 51, 112);
+    --accent-text: rgb(71, 82, 102);
+}
+
+/* home page specific */
+#meContent {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    justify-content: space-between;
+}
+
+#meText {
+    background-color: var(--button-presed);
+    padding: 2% 4.5%;
+    border-radius: 15px;
+}
+
+#writtenContent {
+    margin-top: 35px;
+}
+
+#hello {
+    font-size: 26px;
+    line-height: 18px;
+}
+
+#namecard {
+    line-height: 45px;
+    font-size: 46px;
+    margin-top: 42px;
+}
+
+#writtenContent h2 {
+    font-size: 32px;
+    line-height: 24px;
+}
+
+#majorTextContainer {
+    margin-top: 65px;
+    margin-bottom: 35px;
+}
+
+#goal {
+    font-size: 28px;
+}
+
+.majorText {
+    font-size: 36px;
+}
+
+#webDev {
+    margin-bottom: 28px;
+    font-size: 28px;
+}
+
+#resumeContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+.downloadButton {
+    color: var(--white-color);
+    padding: 26px 40px;
+    font-size: 24px;
+    background-color: var(--accent-button);
+    border-radius: 15px;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.downloadButton:hover {
+    background-color: var(--accent-button-presed);
+}
+
+#mePhotoImg {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
